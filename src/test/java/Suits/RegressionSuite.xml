@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Full regression">
+    <test name="Registration and password">
+        <classes>
+            <class name="Tests.RegistrationTest">
+                <methods>
+                    <include name="RegistrationFlowTest"/>
+                    <include name="RegistrationUserEntersNotMatchingPasswordTest"/>
+                    <include name="UserCanLogoutAndLoginWithCredentialsTest"/>
+                    <include name="UserChangesPasswordTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Product">
+        <classes>
+            <class name="Tests.ProductsTest">
+                <methods>
+                    <include name="SearchProductTest"/>
+                    <include name="SearchAndViewProductTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
